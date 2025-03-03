@@ -1,0 +1,109 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Success Predictor</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            margin-top: 5%;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-control {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: #fff;
+        }
+        .form-control:focus {
+            background: rgba(255, 255, 255, 0.3);
+            color: #fff;
+            box-shadow: none;
+        }
+        .btn-primary {
+            background: #007bff;
+            border: none;
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+        .genre-select {
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Movie Success Predictor</h1>
+        <form action="/predict" method="post">
+            <!-- Budget in Indian Rupees -->
+            <form action="/predict" method="POST">
+                <!-- Budget in Indian Rupees -->
+                <div class="mb-3">
+                    <label for="budget" class="form-label">Budget (in ₹ crore)</label>
+                    <input type="number" class="form-control" id="budget" name="budget" step="0.1" required>
+                </div>
+            
+                <!-- Primary Genre -->
+                <div class="mb-3">
+                    <label for="genre" class="form-label">Primary Genre</label>
+                    <select class="form-select genre-select" id="genre" name="genre" required>
+                        <option value="Action">Action</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Sci-Fi">Sci-Fi</option>
+                        <option value="Thriller">Thriller</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Animation">Animation</option>
+                        <option value="Crime">Crime</option>
+                        <option value="Mystery">Mystery</option>
+                        <option value="Family">Family</option>
+                        <option value="Documentary">Documentary</option>
+                    </select>
+                </div>
+            
+                <!-- Director Popularity -->
+                <div class="mb-3">
+                    <label for="director_popularity" class="form-label">Director Popularity (1-10)</label>
+                    <input type="number" class="form-control" id="director_popularity" name="director_popularity" min="1" max="10" required>
+                </div>
+            
+                <!-- Cast Popularity -->
+                <div class="mb-3">
+                    <label for="cast_popularity" class="form-label">Cast Popularity (1-10)</label>
+                    <input type="number" class="form-control" id="cast_popularity" name="cast_popularity" min="1" max="10" required>
+                </div>
+                
+    
+            
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary">Predict Success</button>
+            </form>
