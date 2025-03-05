@@ -24,3 +24,6 @@ A machine learning-powered web application that predicts the success of a movie 
    ```bash
    git clone https://github.com/noogler-aditya/movie_success_prediction.git
    cd movie_success_prediction
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
