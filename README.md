@@ -4,6 +4,7 @@ A machine learning-powered web application that predicts the success of a movie 
 
 ![Webpage Screenshot] ([![temp-Imageq-O9d5v.avif](https://i.postimg.cc/KcntQzgP/temp-Imageq-O9d5v.avif)](https://postimg.cc/F1HfHhpz)
 
+![Movie primary Genre Section] [![temp-Image-NLAu2-D.avif](https://i.postimg.cc/yxBg2mSF/temp-Image-NLAu2-D.avif)](https://postimg.cc/2bcSZBG6)
 
 ## Features ✨
 - Predicts movie success (Success/Failure) with confidence percentage
