@@ -2,7 +2,7 @@
 
 A machine learning-powered web application that predicts the success of a movie based on its budget, genre, director popularity, and cast popularity. Built with Flask and Scikit-learn.
 
-![File Organizer Pro Screenshot] ([![temp-Imageq-O9d5v.avif](https://i.postimg.cc/KcntQzgP/temp-Imageq-O9d5v.avif)](https://postimg.cc/F1HfHhpz)
+![Webpage Screenshot] ([![temp-Imageq-O9d5v.avif](https://i.postimg.cc/KcntQzgP/temp-Imageq-O9d5v.avif)](https://postimg.cc/F1HfHhpz)
 
 
 ## Features ✨
