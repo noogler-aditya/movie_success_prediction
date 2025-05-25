@@ -19,7 +19,6 @@ A machine learning-powered web application that predicts the success of a movie 
 ## Technologies Used 💻
 - **Backend**: Python, Flask
 - **Machine Learning**: Scikit-learn, Pandas, Joblib
-- **Frontend**: HTML, CSS, Bootstrap
 - **Dataset**: [TMDB 5000 Movie Dataset](https://www.kaggle.com/tmdb/tmdb-5000-movie-dataset)
 
 ## Installation 🛠️
